@@ -1,1 +1,1 @@
-web: uwsgi --http :$PORT --module backend.wsgi
+web: uwsgi uwsgi.ini
