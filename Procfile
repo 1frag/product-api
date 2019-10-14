@@ -1,1 +1,1 @@
-web: uwsgi --http :8000 --module backend.wsgi
+web: uwsgi --http :37243 --module backend.wsgi
