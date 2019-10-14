@@ -1,1 +1,1 @@
-web: gunicorn backend.wsgi --log-file -
+web: uwsgi --http :8000 --module backend.wsgi
