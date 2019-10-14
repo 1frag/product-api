@@ -10,3 +10,5 @@ uwsgi==2.0.18
 django-heroku
 dj-database-url
 psycopg2-binary
+uwsgitop
+werkzeug
