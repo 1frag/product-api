@@ -7,3 +7,6 @@ django_rest_framework==0.1.0
 psycopg2==2.8.3
 django-tastypie==0.14.2
 uwsgi==2.0.18
+django-heroku
+dj-database-url
+psycopg2-binary
