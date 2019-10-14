@@ -1,2 +1,1 @@
-web: uwsgi uwsgi.ini
-web: bin/start-nginx-solo
+web: bin/start-nginx bundle exec uwsgi uwsgi.ini
