@@ -21,6 +21,7 @@ services:
       - static_volume:/opt/services/backend/static
     networks:
       - nginx_network
+      - db_network
     depends_on:
       - db
 
@@ -32,9 +33,13 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_USER: postgres
       POSTGRES_DB: postgres
+    networks:
+      - db_network
 
 networks:
   nginx_network:
+    driver: bridge
+  db_network:
     driver: bridge
 
 volumes:
