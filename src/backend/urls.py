@@ -17,7 +17,6 @@ from django.contrib import admin
 from django.urls import path, include, re_path
 from tastypie.api import Api
 from project.api.resources import Products
-from project.views import get_csrf
 
 
 products_api = Api(api_name='api')
@@ -26,5 +25,4 @@ products_api.register(Products())
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'', include(products_api.urls)),
-    path('csrf/', get_csrf),
 ]
